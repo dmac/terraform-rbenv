@@ -31,7 +31,6 @@ Your Terraform script should look similar to the following:
     Dir["./terraform/*.rb"].each { |plugin| require plugin }
     include Terraform::DSL
 
-    ensure_rbenv
     ensure_rbenv_ruby("1.9.3-p194")
 
     # Other deps...
